@@ -1,7 +1,7 @@
 """
 Training pipeline for the BBB permeability classifier.
 
-Reproduces Section 2.5 of the paper:
+Implements Section 2.5 of the paper:
   - AttentiveFP graph neural network
   - Active learning with margin sampling (best) or entropy sampling
   - Final model: MCC = 0.8215, 918 labeled molecules, 42 query rounds

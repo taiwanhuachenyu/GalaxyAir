@@ -1,6 +1,6 @@
 # GalaxyAir
 
-Reproduction of **"Optimizing blood-brain barrier permeability in KRAS inhibitors: A structure-constrained molecular generation approach"**
+Structure-constrained molecular generation for optimizing KRAS inhibitors with improved blood-brain barrier permeability.
 
 > Journal of Pharmaceutical Analysis, 2025, 15(8): 101337
 > DOI: [10.1016/j.jpha.2025.101337](https://doi.org/10.1016/j.jpha.2025.101337)

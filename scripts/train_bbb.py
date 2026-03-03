@@ -4,7 +4,7 @@ Usage
 -----
     python scripts/train_bbb.py --config config/bbb_predictor.yaml
 
-Reproduces Section 2.5 of the paper:
+Implements the BBB prediction model from Section 2.5:
   AttentiveFP + margin sampling active learning
   Target: MCC = 0.8215 at 918 labeled molecules (42 query rounds)
 """
