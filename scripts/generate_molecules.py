@@ -135,9 +135,11 @@ def main() -> None:
         device=device,
     )
     logd_scorer = LogDScorer(
+        rtlogd_repo_path=logd_cfg["paths"]["rtlogd_repo"],
         weights_path=logd_cfg["paths"]["weights"],
         logd_min=logd_cfg["filter"]["logd_min"],
         logd_max=logd_cfg["filter"]["logd_max"],
+        device=device,
     )
 
     # ---- Generate ----
@@ -177,7 +179,7 @@ def main() -> None:
             aff = float(affinity_scorer(smi))
             bbb = float(bbb_scorer(smi))
             qed = float(compute_qed(smi))
-            logd_val = float(logd_scorer._predictor.predict_single(smi))
+            logd_val = float(logd_scorer.predict(smi))
             sim = float(compute_tanimoto_similarity(seed, smi))
             all_records.append({
                 "seed_smiles": seed,

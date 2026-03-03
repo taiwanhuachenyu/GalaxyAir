@@ -167,4 +167,4 @@ A generated molecule is counted as a success if:
 
 - **PBCNet**: Yu J, Sheng X, et al. Physics-Informed Graph Attention for Binding Affinity Prediction. [myzhengSIMM/PBCNet](https://github.com/myzhengSIMM/PBCNet)
 - **AttentiveFP**: Xiong Z, et al. Pushing the Boundaries of Molecular Representation for Drug Discovery with the Graph Attention Mechanism. *J Med Chem* 2020. DOI: 10.1021/acs.jmedchem.9b00959
-- **RTlogD**: Šícho M, et al. FAME 3: Predicting the Sites of Metabolism in Humans, Rats, and Micro-organisms. *J Chem Inf Model* 2019.
+- **RTlogD**: [WangYitian123/RTlogD](https://github.com/WangYitian123/RTlogD)
