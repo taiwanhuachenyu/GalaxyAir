@@ -1,0 +1,25 @@
+model:
+  # RTlogD: Random Forest logD predictor
+  # Dataset: 4,200 molecules from ChEMBL, logD range [-1.45, 4.33]
+  # Used as a post-generation FILTERING criterion (not in reward function)
+  n_estimators: 500
+  max_depth: null
+  min_samples_leaf: 1
+  n_jobs: -1
+  random_state: 42
+
+featurizer:
+  morgan_radius: 2
+  morgan_n_bits: 2048
+  use_rdkit_descriptors: true   # augment ECFP with physicochemical descriptors
+
+filter:
+  # CNS-focused logD range for BBB penetration
+  logd_min: 0.0
+  logd_max: 4.0
+
+paths:
+  data: data/sample/logd_data.csv
+  smiles_col: SMILES
+  label_col: logD
+  weights_path: weights/logd/rtlogd.pkl
